@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<h1>Show List</h1>
+
+<form asp-action="Show1">
+    <p>
+    Youe Name : <input type="text" name="name" /><br />
+    </p>
+    <p>
+    Contact : <input type="text" name="contact" /><br />
+    </p>
+    <p>
+        select Break Fast:<input type="checkbox" name="breakfast" value="poha"/>Poha
+       < input type="checkbox" name="breakfast" value="Idali"/>Idali
+        <input type="checkbox" name="breakfast" value="Dosa" /> Dosa
+       
+    </p>
+    <p>
+
+        select Starter:<input type="checkbox" name="starter" value="papad" />Papad
+        < input type="checkbox" name="starter" value="Soup"/>Soup
+        <input type="checkbox" name="starter" value="Panner" /> Panner
+
+    </p>
+
+
+ 
+
+    <br />
+    <input type="submit" value="Add Food" />
+
+</form>

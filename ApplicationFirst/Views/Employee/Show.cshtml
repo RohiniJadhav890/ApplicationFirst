@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "Show";
+}
+
+
+<h1>Employee Names</h1>
+
+@if (ViewData["Names"] != null)
+{
+    <ol>
+        @foreach (var name in (IEnumerable<string>)ViewData["Names"])
+        {
+            <li>
+                @name
+            </li>
+        }
+
+    </ol>
+}
+
+
+<h1>Shows ViewBag</h1>
+
+
+@if (ViewData["Names"] != null)
+{
+    <ol>
+        @foreach (var name in ViewBag.Names)
+        {
+            <li>
+                @name
+            </li>
+        }
+
+    </ol>
+}
+<h2>@TempData["message"]</h2>
+
+
+
+
+
+

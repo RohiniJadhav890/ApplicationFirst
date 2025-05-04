@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>List</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Book p in ViewBag.books)
+        {
+            <tr>
+                <td>@p.Id</td>
+                <td>@p.Name</td>
+                <th>@p.Author</th>
+                <td>@p.Price</td>
+            </tr>
+        }
+
+    </tbody>
+</table>

@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewData["Title"] = "Show1";
+}
+
+<h2>Hello,@ViewBag.Name Your Contact<span>@ViewBag.Contact</span></h2>
+<p>
+    <h3>Breakfast</h3>
+    <ol>
+        @foreach (var item in ViewBag.Breakfast)
+        {
+            
+        <li>@item</li>
+        }
+
+    </ol>
+</p>
+
+@* <h1>Show Product List By ViewData</h1> *@
+@* @if (ViewData["Names"] != null) *@
+@* { *@
+@*     <ol> *@
+@*         @foreach (var name in (IEnumerable<string>)ViewData["Names"]) *@
+@*         { *@
+            
+@*         <li> *@
+@*             @name *@
+@*         </li>} *@
+@*     </ol>     *@
+@* } *@
+@* <h1>Show Product List By ViewBag</h1> *@
+@* @if (ViewData["Names"] != null) *@
+@* { *@
+@*     <ol> *@
+@*         @foreach (var name in ViewBag.Names) *@
+@*         { *@
+
+@*             <li> *@
+@*                 @name *@
+@*             </li> *@
+@*         } *@
+@*     </ol> *@
+@* } *@
+
+
+
+
+
